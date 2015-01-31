@@ -1,0 +1,45 @@
+{
+  "name": "ovenware",
+  "version": "0.0.1",
+  "description": "Automatic Model / Controller Loader for Node(express.js)",
+  "main": "lib/ovenware.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --reporter spec --require should test/* --bail",
+    "test-cov": "NODE_ENV=test node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u exports --require should test/* --bail",
+    "test-travis": "NODE_ENV=test node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -u exports --require should test/* --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zedgu/ovenware.git"
+  },
+  "keywords": [
+    "MVC",
+    "Automatic",
+    "express",
+    "middleware",
+    "loader",
+    "route",
+    "router"
+  ],
+  "author": "zedgu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zedgu/ovenware/issues"
+  },
+  "homepage": "https://github.com/zedgu/ovenware",
+  "dependencies": {
+    "debug": "*",
+    "methods": "^1.0.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.11.0",
+    "express": "^3",
+    "istanbul": "^0.3.5",
+    "mocha": "^1.21.4",
+    "should": "^4.0.4",
+    "supertest": "^0.13.0"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  }
+}
