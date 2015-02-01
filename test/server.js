@@ -13,7 +13,7 @@ describe('Controllers', function(){
 
   describe('index', function() {
     describe('GET /', function() {
-      it('should be responsed in json format by default', function(done) {
+      it('should get "Hello World!"', function(done) {
         request
           .get('/')
           .expect(200)
