@@ -1,6 +1,6 @@
 {
   "name": "ovenware",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Automatic Model / Controller Loader for Node(express.js)",
   "main": "lib/ovenware.js",
   "scripts": {
