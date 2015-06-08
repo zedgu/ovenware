@@ -36,7 +36,7 @@ describe('Controllers', function(){
       });
     });
   });
-  describe('/Items', function() {
+  describe('/items', function() {
     var ctrlName = this.title;
     describe('GET ' + ctrlName, function() {
       it('should get the model data', function(done) {
@@ -49,7 +49,7 @@ describe('Controllers', function(){
           });
       });
     });
-    describe('POST /' + ctrlName, function() {
+    describe('POST ' + ctrlName, function() {
       describe('send post:true', function() {
         it('should get the data created by the own function of API req.model()', function(done) {
           request
@@ -60,7 +60,7 @@ describe('Controllers', function(){
         });
       });
     });
-    describe('GET /' + ctrlName + '/:id', function() {
+    describe('GET ' + ctrlName + '/:id', function() {
       it('should get res.body.id = params.id', function(done) {
         request
           .get(ctrlName + '/a')
@@ -157,7 +157,7 @@ describe('When the prefix is a RegExp', function() {
       var app = express();
       var ovenware = Ovenware(app, {
           root: './examples/simple/lib',
-          prefix: /api\/\d\.\d/i
+          prefix: /\/api\/\d\.\d/i
         });
       var request = agent(app);
       request

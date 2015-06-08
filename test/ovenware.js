@@ -55,7 +55,7 @@ describe('Ovenware Testing', function(){
         aliases: {
           index: ''
         },
-        prefix: '/'
+        prefix: ''
       });
     });
   });
