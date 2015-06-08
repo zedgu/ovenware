@@ -4,9 +4,9 @@
   "description": "Automatic Model / Controller Loader for Node(express.js)",
   "main": "lib/ovenware.js",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/mocha --reporter spec --require should test/* --bail",
-    "test-cov": "NODE_ENV=test node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u exports --require should test/* --bail",
-    "test-travis": "NODE_ENV=test node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -u exports --require should test/* --bail"
+    "test": "./node_modules/.bin/mocha --reporter spec --require should test/* --bail",
+    "test-cov": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u exports --require should test/* --bail",
+    "test-travis": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -u exports --require should test/* --bail"
   },
   "repository": {
     "type": "git",
