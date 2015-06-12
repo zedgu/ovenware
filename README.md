@@ -149,7 +149,7 @@ Global configuration
   root: './lib',        // root dir
   ctrl: 'controllers',  // controllers dir
   model: 'models'       // model dir
-  format: 'json',       // format by default
+  extname: 'js|coffee', // defult extname of the files to load
   prefix: '/',          // String or RegExp
   aliases: {
     'index': ''
